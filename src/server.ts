@@ -1,17 +1,18 @@
-import express from "express";
+import express from 'express';
 
 const app = express();
 
-app.post("/", (req, res) => {
+app.post('/', (req, res) => {
   return res.json({
-    message: "Post",
+    message: 'Post',
+    id: 'ss'
   });
 });
 
-app.get("/", (req, res) => {
+app.get('/', (req, res) => {
   return res.json({
-    message: "Get",
+    message: 'Get'
   });
 });
 
-app.listen(3000, () => console.log("server run"));
+app.listen(3000, () => console.log('server run'));
