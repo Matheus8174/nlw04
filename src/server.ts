@@ -6,8 +6,7 @@ const app = express();
 
 app.post('/', (req, res) => {
   return res.json({
-    message: 'Post',
-    id: 'ss'
+    message: 'Post'
   });
 });
 

@@ -4,7 +4,8 @@
   "main": "src/server",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev src/server.ts --traspile-only --ignore-watch node_modules"
+    "dev": "ts-node-dev src/server.ts --traspile-only --ignore-watch node_modules",
+    "typeorm": "ts-node-dev node_modules/typeorm/cli.js"
   },
   "dependencies": {
     "express": "4.17.1",

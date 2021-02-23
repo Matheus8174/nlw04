@@ -16,11 +16,9 @@
   "plugins": [
     "prettier",
     "@typescript-eslint"
-      // "react-hooks"
   ],
   "rules": {
-    // "react-hooks/rules-of-hooks": "error",
-    // "react-hooks/exhaustive-deps": "warn",
+    "class-methods-use-this": "off",
     "react/prop-types": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "react/react-in-jsx-scope": "off",
