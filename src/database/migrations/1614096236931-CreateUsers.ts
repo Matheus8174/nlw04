@@ -38,3 +38,4 @@ export default class CreateUsers1614096236931 implements MigrationInterface {
     await queryRunner.dropTable('users');
   }
 }
+// o migration:run roda todas as migrations o migration:revert desfaz apenas a ultima
