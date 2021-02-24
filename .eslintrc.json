@@ -18,6 +18,7 @@
     "@typescript-eslint"
   ],
   "rules": {
+    "camelcase": "off",
     "class-methods-use-this": "off",
     "react/prop-types": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
