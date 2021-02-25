@@ -17,6 +17,15 @@ class SurveyController {
 
     return res.status(201).json(newSurvey);
   }
+
+  async show(req: Request, res: Response) {
+    const surveyRepository = getCustomRepository(SurveyRepository);
+
+    // find é utilizado para listar todos os registros de uma tabela
+    const allSurveys = await surveyRepository.find();
+
+    return res.json(allSurveys);
+  }
 }
 
 export default SurveyController;
