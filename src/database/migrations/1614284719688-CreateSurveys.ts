@@ -23,6 +23,11 @@ class CreateSurveys1614284719688 implements MigrationInterface {
             name: 'created_at',
             type: 'timestamp',
             default: 'now()'
+          },
+          {
+            name: 'updated_at',
+            type: 'timestamp',
+            default: 'now()'
           }
         ]
       })
