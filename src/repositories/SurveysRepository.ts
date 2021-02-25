@@ -1,11 +1,11 @@
 import { EntityRepository, Repository } from 'typeorm';
-import User from '../models/User';
+import Survey from '../models/Survey';
 
 // esse decorator indica que essa classe é um repositorio
-@EntityRepository(User)
+@EntityRepository(Survey)
 /* ela henrda Repository para ganhar os metodos que existem lá,
    além de Reseber a entidade como paremetro, no caso User
 */
-class UsersRepository extends Repository<User> {}
+class SurveyRepository extends Repository<Survey> {}
 
-export default UsersRepository;
+export default SurveyRepository;
