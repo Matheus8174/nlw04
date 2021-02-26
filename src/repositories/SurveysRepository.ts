@@ -9,3 +9,6 @@ import Survey from '../models/Survey';
 class SurveyRepository extends Repository<Survey> {}
 
 export default SurveyRepository;
+
+// Repositorys são classes que manipulão as models/entitys, criando,
+// atualizando, buscando ou deletando.
