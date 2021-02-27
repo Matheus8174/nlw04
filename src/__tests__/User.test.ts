@@ -16,8 +16,13 @@ describe('Users', () => {
 
     expect(response.status).toBe(201);
   });
+
+  it('Shoud not be able to create a user with exists email', async () => {
+    const response = await request(app).post('/users').send({
+      email: 'usr@mal.o',
+      name: 'userexmp'
+    });
+
+    expect(response.status).toBe(400);
+  });
 });
-
-// 1:01:45
-
-// right now time, 1:01:43
